@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build SchedulerSim",
+            "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-std=c++20",
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "-fdiagnostics-color=always",
+                "-g",
+                "main.cpp",
+                "process.cpp",
+                "scheduler.cpp",
+                "simulation.cpp",
+                "fcfs.cpp",
+                "-o",
+                "scheduler_sim.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Builds the full Process Scheduler Simulator project."
+        }
+    ]
+}
+
