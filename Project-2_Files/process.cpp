@@ -1,5 +1,4 @@
 #include "process.h"
-#include <iostream>
 
 Process::Process(int PID, int arrival, int burst, int priority){
     pid = PID;
@@ -11,11 +10,12 @@ Process::Process(int PID, int arrival, int burst, int priority){
 
 void Process::print_data_of_process()
 {
-    cout << "\nPID: " << pid
+    std::cout << "\nPID: " << pid
          << "\nArrival Time: " << arrival_time
          << "\nBurst Time: " << burst_time
          << "\nPriority: " << priority
          << "\nRemaining Time: " << remaining_time
          << "\nStart Time: " << start_time
-         << "\nCompletion Time: " << completion_time;
+         << "\nCompletion Time: " << completion_time
+         << "\n \n";
 }

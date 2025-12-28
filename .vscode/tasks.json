@@ -3,7 +3,7 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "Build SchedulerSim",
+            "label": "Build Scheduler Simulator",
             "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
             "args": [
                 "-std=c++20",
@@ -17,8 +17,12 @@
                 "scheduler.cpp",
                 "simulation.cpp",
                 "fcfs.cpp",
+                "sjf_np.cpp",
+                "sjf_p.cpp",
+                "priority.cpp",
+                "round_robin.cpp",
                 "-o",
-                "scheduler_sim.exe"
+                "Scheduler_Simulator.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"

@@ -1,10 +1,8 @@
-#ifndef FCFS_H
-#define FCFS_H
-
+#ifndef PRIORITY_H
+#define PRIORITY_H
 #include "scheduler.h"
-// #include <queue>
 
-class FCFS : public Scheduler
+class Priority : public Scheduler
 {
     std::vector<Process> all_Processes;
     std::vector<Process> ready;

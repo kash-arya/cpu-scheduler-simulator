@@ -1,10 +1,8 @@
-#ifndef FCFS_H
-#define FCFS_H
-
+#ifndef SJF_P_H
+#define SJF_P_H
 #include "scheduler.h"
-// #include <queue>
 
-class FCFS : public Scheduler
+class SJF_P : public Scheduler
 {
     std::vector<Process> all_Processes;
     std::vector<Process> ready;
@@ -16,5 +14,4 @@ public:
     bool has_pending() const override;
     std::vector<Process> get_completed() const override;
 };
-
 #endif

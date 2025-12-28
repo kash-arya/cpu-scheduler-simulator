@@ -1,14 +1,13 @@
-#ifndef FCFS_H
-#define FCFS_H
+#ifndef SJF_NP_H
+#define SJF_NP_H
 
 #include "scheduler.h"
-// #include <queue>
 
-class FCFS : public Scheduler
+class SJF_NP : public Scheduler
 {
-    std::vector<Process> all_Processes;
     std::vector<Process> ready;
     std::vector<Process> completed;
+    std::vector<Process> all_Processes;
 
 public:
     void add_process(const Process &P) override;

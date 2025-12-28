@@ -2,10 +2,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Run SchedulerSim (g++ with MinGW)",
+            "name": "Run Scheduler Simulator (g++ with MinGW)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}\\scheduler_sim.exe",
+            "program": "${fileDirname}\\Scheduler_Simulator.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
